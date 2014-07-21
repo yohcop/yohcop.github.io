@@ -1,0 +1,45 @@
+---
+layout: default
+title: Dear Future Me - Yohann Coppel
+---
+<h1>Dear Future Me</h1>
+
+<h2>Archives</h2>
+<div id="archives">
+  <ul>
+  {% for post in site.posts %}
+    <li><span class="date">{{ post.date | date_to_string }}</span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+
+<h2>By Category</h2>
+{% for p in site.categories %}
+<a href="#{{ p[0] }}">{{ p[0] }}</a>
+{% if forloop.last == false %} | {% endif %}
+{% endfor %}
+
+{% for p in site.categories %}
+<a name="{{ p[0] }}"></a>
+<h3>{{ p[0] }}</h3>
+<div id="archives">
+  <ul>
+  {% for q in site.posts %}
+    {% if q.categories contains p[0] %}
+      <li><span class="date">{{ q.date | date_to_string }}</span><a href="{{ site.baseurl }}/{{ q.url }}">{{ q.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
+<h2>Pages</h2>
+<ul>
+<li><a href="{{ site.baseurl }}/pages/android.html">Android</a></li>
+<li><a href="{{ site.baseurl }}/pages/about.html">About</a></li>
+<li><a href="{{ site.baseurl }}/pages/hack.html">Hack</a></li>
+<li><a href="{{ site.baseurl }}/pages/stay-awake-widget.html">Stay awake widget</a></li>
+<li><a href="{{ site.baseurl }}/pages/stuff.html">Stuff</a></li>
+<li><a href="{{ site.baseurl }}/pages/bapl.html">Be Awesome Public Licence</a></li>
+</ul>
+

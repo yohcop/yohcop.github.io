@@ -1,0 +1,3 @@
+jekyll --no-auto && \
+    rsync -avz --delete local_site/ leppoc@b.leppoc.net:~/leppoc.net/b.jekyll/ && \
+    rsync -avz --delete files/ leppoc@b.leppoc.net:~/leppoc.net/b.jekyll/files/

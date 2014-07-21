@@ -1,0 +1,69 @@
+body{
+  font-family: 'Open Sans', arial, serif;
+}
+h1{
+  font-family: 'Open Sans Condensed', arial, serif;
+  text-align:center;
+  color:#E7570E;
+  font-weight: normal;
+  font-size: 48px;
+}
+h1 a{
+  text-decoration:none;
+  color: #F0701C;
+}
+.site{
+  width: 600px;
+  margin:auto;
+}
+h2{
+  font-family: 'Roboto', arial, serif;
+  text-align:center;
+  font-size: 32px;
+  font-weight: 300;
+}
+#home h2 {
+  text-align:left;
+}
+h3{
+  font-family: 'Open sans', arial, serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+a {
+color:#4AAF48;
+text-decoration: none;
+}
+#nav {
+  border-top: 1px solid #F0701C;
+  width: 600px;
+  margin:auto;
+}
+#cp {
+  font-size: 10pt;
+  text-align:center;
+}
+#paging{
+  margin:20px 0 10px 0;
+}
+#paging .older{
+float:left;
+}
+#paging .newer{
+float:right;
+}
+
+#archives ul{
+list-style-type: none;
+padding-left: 0px;
+}
+#archives .date{
+float:left;
+width:100px;
+color:#777;
+}
+img {
+max-width: 80%;
+margin: auto;
+display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>{{ page.title }}</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="alternate" type="application/atom+xml" title="RSS for posts" href="{{ site.baseurl }}/feed/" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300normal,300italic,700normal|Open+Sans:300normal,400normal|Roboto&subset=all'
+  rel='stylesheet' type='text/css'>
+
+  <link href='{{ site.baseurl }}/css/default.css' rel='stylesheet' type='text/css'>
+  <link href='{{ site.baseurl }}/css/syntax.css' rel='stylesheet' type='text/css'>
+</head>
+
+<div class="site">
+  {{ content }}
+</div>
+
+<div id="nav">
+  <h1><a href="{{ site.baseurl }}/">Dear Future Me</a></h1>
+  <div id="cp">
+    <a href="{{ site.baseurl }}/">Home</a> |
+    <a href="{{ site.baseurl }}/archives.html">Archives</a> |
+    <a href="{{ site.baseurl }}/pages/about.html">&copy; Yohann Coppel</a></div>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6170073-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
