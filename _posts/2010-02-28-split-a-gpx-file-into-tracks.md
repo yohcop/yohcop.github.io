@@ -37,11 +37,7 @@ in the script, and run it again.
 
 I may or may not clean/improve this script later if I need to.
 
-Download [SpligGpx.scala](/files/SpligGpx.scala).
-
-{% highlight scala linenos %}
-{% include files/SplitGpx.scala %}
-{% endhighlight %}
+Download [SpligGpx.scala]({{site.baseurl}}}/files/SpligGpx.scala).
 
 Links:
 
