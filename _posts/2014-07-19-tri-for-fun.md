@@ -4,9 +4,10 @@ title: Tri For Fun Sprint Triathlon
 
 categories:
 - Running
-- Ultra Running
-- Adventure
+- Cycling
 - Race Report
+- Triathlon
+- Swimming
 
 image_dir: https://5854c0ebec37d9c0179e5b578a43410852993949.googledrive.com/host/0B93JtF51WOn5UVZGMzgyd2E3OHM/OldGoats50M-2014
 ---

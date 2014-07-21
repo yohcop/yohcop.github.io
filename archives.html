@@ -13,7 +13,17 @@ title: Dear Future Me - Yohann Coppel
   </ul>
 </div>
 
-<h2>By Category</h2>
+<h2>Pages</h2>
+<ul>
+<li><a href="{{ site.baseurl }}/pages/android.html">Android</a></li>
+<li><a href="{{ site.baseurl }}/pages/about.html">About</a></li>
+<li><a href="{{ site.baseurl }}/pages/hack.html">Hack</a></li>
+<li><a href="{{ site.baseurl }}/pages/stay-awake-widget.html">Stay awake widget</a></li>
+<li><a href="{{ site.baseurl }}/pages/stuff.html">Stuff</a></li>
+<li><a href="{{ site.baseurl }}/pages/bapl.html">Be Awesome Public Licence</a></li>
+</ul>
+
+<h2>By Tag</h2>
 {% for p in site.categories %}
 <a href="#{{ p[0] }}">{{ p[0] }}</a>
 {% if forloop.last == false %} | {% endif %}
@@ -32,14 +42,4 @@ title: Dear Future Me - Yohann Coppel
   </ul>
 </div>
 {% endfor %}
-
-<h2>Pages</h2>
-<ul>
-<li><a href="{{ site.baseurl }}/pages/android.html">Android</a></li>
-<li><a href="{{ site.baseurl }}/pages/about.html">About</a></li>
-<li><a href="{{ site.baseurl }}/pages/hack.html">Hack</a></li>
-<li><a href="{{ site.baseurl }}/pages/stay-awake-widget.html">Stay awake widget</a></li>
-<li><a href="{{ site.baseurl }}/pages/stuff.html">Stuff</a></li>
-<li><a href="{{ site.baseurl }}/pages/bapl.html">Be Awesome Public Licence</a></li>
-</ul>
 
