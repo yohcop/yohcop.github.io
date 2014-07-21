@@ -18,13 +18,13 @@ title: Dear Future Me - Yohann Coppel
 
 <div id='paging'>
   {% if paginator.next_page %}
-    <a href='{{ site.baseurl }}/page{{ paginator.next_page }}' class='older'>&#xAB; Older Posts</a>
+    <a href='{{ site.baseurl }}/blog/{{ paginator.next_page }}' class='older'>&#xAB; Older Posts</a>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
       <a href='{{ site.baseurl }}/' class='newer'>Newer Posts &#xBB;</a>
     {% else %}
-      <a href='{{ site.baseurl }}/page{{ paginator.previous_page }}' class='newer'>Newer Posts &#xBB;</a>
+      <a href='{{ site.baseurl }}/blog/{{ paginator.previous_page }}' class='newer'>Newer Posts &#xBB;</a>
     {% endif %}
   {% endif %}
   <div style="clear:both"></div>
